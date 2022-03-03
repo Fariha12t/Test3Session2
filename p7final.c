@@ -4,7 +4,7 @@ struct _fraction
   int num,den;
 };
 typedef struct _fraction Fraction ;
-int find_gcd(int a,int b)
+int gcd(int a,int b)
   {
     int t;
     while (b!=0)
@@ -35,7 +35,7 @@ Fraction add_fraction(Fraction f1, Fraction f2)
 }
 void output(Fraction f1, Fraction f2, Fraction sum)
 {
-  printf(" the sum of two fractions is %d/%d and %d%d is %d%d",f1.num,f1.den,f2.num,f2.den, sum.num,sum.den);
+  printf(" the sum of two fractions is %d/%d and %d/%d is %d/%d",f1.num,f1.den,f2.num,f2.den, sum.num,sum.den);
 }
 int main()
 {
