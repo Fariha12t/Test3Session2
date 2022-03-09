@@ -10,7 +10,7 @@ int input_degree()
 float input_x()
 {
   float x;
-  printf("enter value of x:\n");
+  printf("enter value of x:");
   scanf("%f",&x);
   return x;
 }
@@ -58,7 +58,7 @@ void output(int n, int fibo);
 
 */
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int input()
 {
@@ -92,4 +92,4 @@ int main()
   int fibo = find_fibo(n);
   output(n, fibo);
   return 0;
-}
+}*/
