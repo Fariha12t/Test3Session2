@@ -7,15 +7,17 @@ int input(int *n, int *r)
 }
 int ncr(int n, int r)
 {
-  int factorial(int num);
-  int fact=1,i,num,ncr;
-  for(i=1; i<=num; i++)
-    {
-      fact = fact*i;
-    }
-    return fact;
-  ncr = factorial(n)/(factorial(r)*factorial(n-r));
+  float ncr;
+  int fact(int a);
+  ncr=fact(n)/(fact(r)*fact(n-r));
 }
+int fact(int a)
+  {
+    if(a==1)
+      return 1;
+    else 
+      return a*fact(a-1);
+  }
 void output(int n, int r , int result)
 {
   printf("nCr factorial of %d and %d is %d", n,r,result);
